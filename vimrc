@@ -68,3 +68,5 @@ setlocal spell spelllang=fr
 " Save a file you edited in vim without the needed permissions
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
+" Enable pathogen
+call pathogen#infect()
