@@ -1,6 +1,9 @@
 " Remove ALL autocommands for the current group
 :autocmd!
 
+" Enable pathogen
+call pathogen#runtime_append_all_bundles()
+
 set encoding=utf-8 " Encodage par defaut
 set nocompatible " Pas de compatibilité vi
 set bs=indent,start,eol " retour en arrière simplifié
@@ -64,9 +67,7 @@ filetype plugin on
 " Activation de la correction grammaticale
 let g:languagetool_jar=$HOME .'/software/languagetool/1.5/LanguageTool.jar'
 setlocal spell spelllang=fr
+set nospell
 
 " Save a file you edited in vim without the needed permissions
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
-
-" Enable pathogen
-call pathogen#infect()
