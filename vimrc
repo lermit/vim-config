@@ -25,6 +25,10 @@ highlight LineNr ctermbg=grey ctermfg=black
 " Map la touche <F8> pour switcher entre action et template symfony
 silent map <F8> :SfSwitchView <CR>
 
+" ShowFunc key binding
+map   <F7> <Plug>ShowFunc
+map!  <F7> <Plug>ShowFunc
+
 " menu
 set wildmenu
 set wildignore=*.o,*#,*~,*.dll,*.so,*.a
