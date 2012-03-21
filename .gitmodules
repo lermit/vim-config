@@ -16,3 +16,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/vim-scripts/surround.vim.git
+[submodule "bundle/ShowFunc"]
+	path = bundle/ShowFunc
+	url = https://github.com/vim-scripts/ShowFunc.vim.git
