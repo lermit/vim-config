@@ -1,0 +1,41 @@
+# \item
+snippet it
+	\item ${1}
+snippet fsub
+	\subsection{${1:section name}} % (fold)
+	\begin{frame}
+	\frametitle{${3:$1}}
+	${4}
+	\end{frame}
+	% subsection $2 (end)
+snippet fsec
+	\section{${1:section name}} % (fold)
+	\begin{frame}
+	\frametitle{${2:$1}}
+	${4}
+	\end{frame}
+	% section $1 (end)
+snippet fsubs
+	\subsubsection{${1:section name}} % (fold)
+	\begin{frame}
+	\frametitle{${2:$1}}
+	${4}
+	\end{frame}
+	% subsubsection $1 (end)
+snippet frame
+	\begin{frame}
+	\frametitle{${1:frame title}}
+	${2}
+	\end{frame}
+snippet block
+	\begin{block}{${1:block title}}
+	${2}
+	\end{block}
+snippet emph
+	\emph{${1}}
+snippet vblock
+	\begin{block}{${1:block title}}
+		\scriptsize\verbatiminput{${2}}
+	\end{block}
+snippet script
+	\scriptsize ${1}\normalsize

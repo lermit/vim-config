@@ -76,11 +76,11 @@ let g:pdv_cfg_CommentSingle = "//"
 
 " Default values
 let g:pdv_cfg_Type = "mixed"
-let g:pdv_cfg_Package = ""
-let g:pdv_cfg_Version = "1.5"
-let g:pdv_cfg_Author = "Romain THERRAT <Romain.THERRAT@SUPINFO.com"
-let g:pdv_cfg_Copyright = "1997-2005 The PHP Group"
-let g:pdv_cfg_License = "BSD"
+let g:pdv_cfg_Package = "Administrateur-linux.com"
+let g:pdv_cfg_Author = "Romain THERRAT <romain42@gmail.com>"
+let g:pdv_cfg_Copyright = "2012 Romain THERRAT"
+let g:pdv_cfg_License = "LGPL http://www.gnu.org/copyleft/lesser.html"
+let g:pdv_cfg_Version = "Release: 0.1"
 
 let g:pdv_cfg_ReturnVal = "void"
 
@@ -421,10 +421,10 @@ func! PhpDocClass()
         exe l:txtBOL . g:pdv_cfg_Commentn . "@final" . g:pdv_cfg_EOL
     endif
 	exe l:txtBOL . g:pdv_cfg_Commentn . "@package " . g:pdv_cfg_Package . g:pdv_cfg_EOL
-	exe l:txtBOL . g:pdv_cfg_Commentn . "@version " . g:pdv_cfg_Version . g:pdv_cfg_EOL
-	exe l:txtBOL . g:pdv_cfg_Commentn . "@copyright " . g:pdv_cfg_Copyright . g:pdv_cfg_EOL
 	exe l:txtBOL . g:pdv_cfg_Commentn . "@author " . g:pdv_cfg_Author g:pdv_cfg_EOL
+	exe l:txtBOL . g:pdv_cfg_Commentn . "@copyright " . g:pdv_cfg_Copyright . g:pdv_cfg_EOL
 	exe l:txtBOL . g:pdv_cfg_Commentn . "@license " . g:pdv_cfg_License . g:pdv_cfg_EOL
+	exe l:txtBOL . g:pdv_cfg_Commentn . "@version " . g:pdv_cfg_Version . g:pdv_cfg_EOL
 
 	" Close the comment block.
 	exe l:txtBOL . g:pdv_cfg_CommentTail . g:pdv_cfg_EOL

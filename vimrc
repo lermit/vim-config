@@ -70,6 +70,7 @@ filetype plugin on
 
 " Activation de la correction grammaticale
 let g:languagetool_jar=$HOME .'/software/languagetool/1.5/LanguageTool.jar'
+let g:languagetool_disable_rules="FRENCH_WHITESPACE,WHITESPACE_RULE,FIXTURE,EMAIL"
 setlocal spell spelllang=fr
 set nospell
 
