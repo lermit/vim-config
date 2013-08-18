@@ -19,9 +19,6 @@
 [submodule "bundle/ShowFunc"]
 	path = bundle/ShowFunc
 	url = https://github.com/vim-scripts/ShowFunc.vim.git
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
 [submodule "bundle/XDebug-DBGp-client-for-PHP"]
 	path = bundle/XDebug-DBGp-client-for-PHP
 	url = https://github.com/vim-scripts/XDebug-DBGp-client-for-PHP.git
