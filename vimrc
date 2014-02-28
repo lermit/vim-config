@@ -2,7 +2,8 @@
 :autocmd!
 
 " Enable pathogen
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
+"call pathogen#runtime_append_all_bundles()
 
 set encoding=utf-8 " Encodage par defaut
 set nocompatible " Pas de compatibilité vi
@@ -67,6 +68,7 @@ autocmd BufRead * silent! %s/[\r \t]\+$//
 
 filetype on
 filetype plugin on
+filetype plugin indent on
 
 " Activation de la correction grammaticale
 let g:languagetool_jar=$HOME .'/software/languagetool/1.5/LanguageTool.jar'
