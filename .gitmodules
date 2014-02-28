@@ -19,9 +19,6 @@
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = http://github.com/mattn/emmet-vim.git
-[submodule "bundle/puppet"]
-	path = bundle/puppet
-	url = https://github.com/rodjek/vim-puppet.git
 [submodule "bundle/puppet-vim"]
 	path = bundle/puppet-vim
 	url = https://github.com/ajf/puppet-vim.git
