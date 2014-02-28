@@ -5,6 +5,8 @@
 execute pathogen#infect()
 "call pathogen#runtime_append_all_bundles()
 
+runtime macros/matchit.vim
+
 set encoding=utf-8 " Encodage par defaut
 set nocompatible " Pas de compatibilité vi
 set bs=indent,start,eol " retour en arrière simplifié
@@ -47,6 +49,29 @@ highlight CursorLine term=reverse cterm=reverse
 colorscheme default
 
 syntax on " Coloration syntaxique
+
+
+" Status line
+set statusline=%t       "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%h      "help file flag
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=1
+let g:syntastic_auto_loc_list=1
+
 
 
 " Lier le plugin closetag au fichier html, xml, xsl et php
