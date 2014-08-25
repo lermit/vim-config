@@ -1,6 +1,7 @@
 " Remove ALL autocommands for the current group
 :autocmd!
 
+
 " Enable pathogen
 execute pathogen#infect()
 "call pathogen#runtime_append_all_bundles()
@@ -69,9 +70,8 @@ set statusline+=%*
 
 " syntastic
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
+"let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_auto_loc_list=1
-
 
 
 " Lier le plugin closetag au fichier html, xml, xsl et php
@@ -103,3 +103,10 @@ set nospell
 
 " Save a file you edited in vim without the needed permissions
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
