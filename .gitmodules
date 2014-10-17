@@ -16,18 +16,24 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/vim-scripts/surround.vim.git
-[submodule "bundle/ShowFunc"]
-	path = bundle/ShowFunc
-	url = https://github.com/vim-scripts/ShowFunc.vim.git
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
-[submodule "bundle/XDebug-DBGp-client-for-PHP"]
-	path = bundle/XDebug-DBGp-client-for-PHP
-	url = https://github.com/vim-scripts/XDebug-DBGp-client-for-PHP.git
-[submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "bundle/vim-javascript-syntax"]
-	path = bundle/vim-javascript-syntax
-	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = http://github.com/mattn/emmet-vim.git
+[submodule "bundle/puppet-vim"]
+	path = bundle/puppet-vim
+	url = https://github.com/ajf/puppet-vim.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/vim-lint"]
+	path = bundle/vim-lint
+	url = https://github.com/dbakker/vim-lint.git
